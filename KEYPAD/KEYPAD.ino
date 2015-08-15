@@ -1,15 +1,15 @@
 #include <Keypad.h>
 
-const byte ROWS = 4; 
-const byte COLS = 4; 
+const byte ROWS = 4; //가로
+const byte COLS = 4; //세로
 char keys[ROWS][COLS] = {
-  {'1','2','3','A'},
-  {'4','5','6','B'},
-  {'7','8','9','C'},
-  {'*','0','#','D'}
+  {'13','9','5','1'},
+  {'14','10','6','2'},
+  {'15','11','7','3'},
+  {'16','12','8','4'}
 };
-byte rowPins[ROWS] = {9, 10, 11, 12}; //connect to row pinouts 
-byte colPins[COLS] = {5, 6, 7, 8}; //connect to column pinouts
+byte rowPins[ROWS] = {16, 12, 8, 4}; //connect to row pinouts 
+byte colPins[COLS] = {3, 4}; //connect to column pinouts
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 
