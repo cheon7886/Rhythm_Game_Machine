@@ -4,4 +4,5 @@ RGM is an abbreviation of Rhythm Game Machine.
 ###Keypad
 http://playground.arduino.cc/Code/Keypad  
 ###Shift Register
-http://bildr.org/2011/02/74hc595/  
+http://bildr.org/2011/02/74hc595/
+http://eskelt.tistory.com/30

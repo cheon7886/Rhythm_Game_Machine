@@ -116,5 +116,5 @@ void loop() {
     // stop the tone playing:
     noTone(8);
   }
-  delay(400);
+  delay(1000);
 }
