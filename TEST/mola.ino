@@ -36,9 +36,9 @@ void setup() {
 
 void loop() {
   
-  LEDs[0][0] = 1;
-  LEDs[4][4] = 1;
-  LEDs[7][7] = 1;
+  //LEDs[3][2] = 0;
+  //LEDs[4][4] = 1;
+  //LEDs[7][7] = 1;
 
   /*LEDs[random(8)][random(8)] = 1;
   if (counter > 200) {
@@ -47,7 +47,7 @@ void loop() {
   }*/
   
   lightLED();
-  counter++;
+  //counter++;
 }
 
 void blankLED() {
