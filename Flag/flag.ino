@@ -71,13 +71,20 @@ int asdf;
 
 void loop() {
     int rnd = random(0, 4);
+   asdf = JoyValue();
+    for(int i = 0; i <= 500; i++){
     make_screen(flag[rnd]);
-    
-    asdf = JoyValue();
-    if(asdf == rnd){
-      score += 100;
-      Serial.print("ssibal");
+  
     }
+      if(asdf == rnd){
+      score += 100;
+      Serial.println("+100 point!");
+      Serial.println("your score is = " && score);
+    }
+  
+    
+   
+    
     
     delay(2000);
 }
