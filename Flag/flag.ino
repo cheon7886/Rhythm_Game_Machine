@@ -78,8 +78,9 @@ void loop() {
     }
       if(asdf == rnd){
       score += 100;
-      Serial.println("+100 point!");
+      Serial.print("+100 point!  ");
       Serial.println("your score is = " && score);
+      beep();
     }
   
     
@@ -151,12 +152,12 @@ int JoyValue() {
   yPosition = map(analogRead(yPin), 0, 1024, -50, 50);
   //buttonState = 1 - digitalRead(buttonPin);
 
-  if (xPosition > 10){
+  if (xPosition > 5){
     return 1;
     //Serial.print(blueup);
     //delay(100);
   }
-  if (xPosition < -10){
+  if (xPosition < -5){
     return 2;
     //Serial.print(bluedn);
     //delay(100);
@@ -171,5 +172,8 @@ int JoyValue() {
     //Serial.print(whtdn);
     //delay(100);
   }
+}
+void beep(){
+  tone(8, 392,250);
 }
 
